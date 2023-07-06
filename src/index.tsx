@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Menu from './pages/Menu';
 
 ReactDOM.render(
   <React.StrictMode>
-    <div> Aluroni </div>
+    <Menu></Menu>
   </React.StrictMode>,
   document.getElementById('root')
 );
