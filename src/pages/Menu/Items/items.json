@@ -1,0 +1,119 @@
+[
+  {
+      "title": "Mediterranean Pasta",
+      "description": "Spaghetti pasta with seafood and spices, a specialty of the kitchen. Attention: Contains shrimp and other seafood!",
+      "photo": "/assets/menu_food/mediterranean_pasta.png",
+      "size": 400,
+      "serving": 2,
+      "price": 73.0,
+      "id": 1,
+      "category": {
+          "id": 1,
+          "label": "Pastas"
+      }
+  },
+  {
+      "title": "House Pasta",
+      "description": "Pasta with seafood and spices, a specialty of the kitchen. Attention: Contains shrimp and other seafood!",
+      "photo": "/assets/menu_food/house_pasta.png",
+      "size": 400,
+      "serving": 2,
+      "price": 54.0,
+      "id": 2,
+      "category": {
+          "id": 1,
+          "label": "Pastas"
+      }
+  },
+  {
+      "title": "Chilli Pasta",
+      "description": "Fettuccine pasta with chilli sauce and spices.",
+      "photo": "/assets/menu_food/chilli_pasta.png",
+      "size": 350,
+      "serving": 1,
+      "price": 58.0,
+      "id": 3,
+      "category": {
+          "id": 1,
+          "label": "Pastas"
+      }
+  },
+  {
+      "title": "House Salad with Grilled Salmon",
+      "description": "House salad (lettuce, arugula, carrot) with salmon.",
+      "photo": "/assets/menu_food/house_salad.png",
+      "size": 450,
+      "serving": 1,
+      "price": 42.0,
+      "id": 4,
+      "category": {
+          "id": 2,
+          "label": "Meats"
+      }
+  },
+  {
+      "title": "Steak with Potatoes",
+      "description": "Beef steak (150g) on the grill, with French fries. Served with rice and sauces.",
+      "photo": "/assets/menu_food/steak_with_potatoes.png",
+      "size": 550,
+      "serving": 2,
+      "price": 86.0,
+      "id": 5,
+      "category": {
+          "id": 2,
+          "label": "Meats"
+      }
+  },
+  {
+      "title": "Diced Picanha with Vegetables and Pasta",
+      "description": "400g of diced picanha with grilled vegetables and pasta of choice.",
+      "photo": "/assets/menu_food/diced_picanha.png",
+      "size": 850,
+      "serving": 3,
+      "price": 123.0,
+      "id": 6,
+      "category": {
+          "id": 3,
+          "label": "Combos"
+      }
+  },
+  {
+      "title": "Vegan Lasagna (Soy Meat)",
+      "description": "100% vegan lasagna made with soy meat and special pasta.",
+      "photo": "/assets/menu_food/vegan_lasagna.png",
+      "size": 350,
+      "serving": 1,
+      "price": 45.0,
+      "id": 7,
+      "category": {
+          "id": 4,
+          "label": "Vegans"
+      }
+  },
+  {
+      "title": "Special Salad",
+      "description": "Salad with avocado, mango, lettuce, chickpeas, and more.",
+      "photo": "/assets/menu_food/special_salad.png",
+      "size": 350,
+      "serving": 1,
+      "price": 37.0,
+      "id": 8,
+      "category": {
+          "id": 4,
+          "label": "Vegans"
+      }
+  },
+  {
+      "title": "Meatballs",
+      "description": "Meatball portion with sour cream, onion, and spices. Served with rice or pasta.",
+      "photo": "/assets/menu_food/meatballs.png",
+      "size": 740,
+      "serving": 3,
+      "price": 120.0,
+      "id": 9,
+      "category": {
+          "id": 3,
+          "label": "Combos"
+      }
+  }
+]
