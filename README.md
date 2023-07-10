@@ -10,6 +10,8 @@ Este é um projeto React desenvolvido durante o curso "React: Lidando com Arquiv
 - Importação de arquivos SVG como componentes React utilizando o SVGR.
 - Aprendizado sobre imports estáticos e importação dinâmica de arquivos estáticos.
 
+**[Acesse aqui o Alura-Aluroni pelo Vercel](https://alura-aluroni-pi.vercel.app/)**
+
 ## Como clonar o repositório
 
 Siga as etapas abaixo para clonar este repositório e executar o projeto em sua máquina local:
