@@ -1,5 +1,4 @@
-import React, { Dispatch, SetStateAction } from "react";
-
+import { Dispatch, SetStateAction } from "react";
 import styles from './Search.module.scss'
 import { CgSearch } from 'react-icons/cg'
 
