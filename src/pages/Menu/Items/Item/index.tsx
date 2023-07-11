@@ -1,11 +1,11 @@
-import styles from './Item.module.scss'
-import menu from 'pages/Menu/Items/items.json'
-import classNames from 'classnames'
+import styles from './Item.module.scss';
+import menu from 'pages/Menu/Items/items.json';
+import classNames from 'classnames';
 
 type ItemProps = typeof menu[0];
 
 export default function Item(
-     { title, description, photo:image, size, serving, price, category }: ItemProps
+    { title, description, photo:image, size, serving, price, category }: ItemProps
 ) {
     return (
         <div className={styles.item}>
@@ -36,5 +36,5 @@ export default function Item(
                 </div>
             </div>
         </div>
-    )    
+    );    
 }

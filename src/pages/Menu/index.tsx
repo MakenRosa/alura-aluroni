@@ -1,16 +1,16 @@
-import styles from './Menu.module.scss'
-import {ReactComponent as Logo} from 'assets/logo.svg'
-import Search from './Search'
-import { useState } from 'react'
-import Filters from './Filters'
-import Items from './Items'
-import Orderer from './Orderer'
+import styles from './Menu.module.scss';
+import {ReactComponent as Logo} from 'assets/logo.svg';
+import Search from './Search';
+import { useState } from 'react';
+import Filters from './Filters';
+import Items from './Items';
+import Orderer from './Orderer';
 
 
 export default function Menu() {
-    const [search, setSearch] = useState('')
-    const [filter, setFilter] = useState<number | null>(null)
-    const [orderer, setOrderer] = useState('')
+    const [search, setSearch] = useState('');
+    const [filter, setFilter] = useState<number | null>(null);
+    const [orderer, setOrderer] = useState('');
     return(
         <main>
             <nav className={styles.navbar}>
@@ -31,5 +31,5 @@ export default function Menu() {
                 <Items search={search} filter={filter} orderer={orderer}/>
             </section>
         </main>
-    )
+    );
 }
