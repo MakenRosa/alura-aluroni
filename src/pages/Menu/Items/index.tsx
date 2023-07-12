@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Item from './Item';
-import menu from './items.json';
+import menu from 'data/menu.json';
 import styles from './Items.module.scss';
 
 interface ItemsProps {
