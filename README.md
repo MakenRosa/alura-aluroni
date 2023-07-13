@@ -1,6 +1,10 @@
 # Aluroni
 
-Este é um projeto React desenvolvido durante o curso "React: Lidando com Arquivos Estáticos" da Alura. Neste curso, foram abordados diversos aspectos relacionados ao uso de arquivos estáticos em aplicações React. Alguns dos tópicos abordados incluem:
+Este é um projeto React desenvolvido durante os seguintes cursos da Alura:
+
+## React: Lidando com Arquivos Estáticos
+
+Neste curso, foram abordados diversos aspectos relacionados ao uso de arquivos estáticos em aplicações React. Alguns dos tópicos abordados incluem:
 
 - Criação de uma aplicação React do zero utilizando o Create React App.
 - Normalização de estilos com o uso do normalize.css.
@@ -9,6 +13,21 @@ Este é um projeto React desenvolvido durante o curso "React: Lidando com Arquiv
 - Uso do pacote 'classnames' para simplificar o uso de CSS Modules e estilos condicionais.
 - Importação de arquivos SVG como componentes React utilizando o SVGR.
 - Aprendizado sobre imports estáticos e importação dinâmica de arquivos estáticos.
+
+---
+
+## React: Conhecendo a Biblioteca React Router (continuação do projeto do primeiro curso)
+
+Neste curso, foram explorados diversos aspectos relacionados à biblioteca React Router. Alguns dos tópicos abordados incluem:
+
+- Configuração inicial do React Router e a integração com a aplicação React existente.
+- Compreensão sobre o funcionamento das rotas e como a biblioteca interage com o navegador.
+- Uso do pacote 'react-router-dom' para implementar a navegação entre diferentes componentes da aplicação.
+- Criação de múltiplas rotas e navegação entre elas de diversas formas.
+- Reaproveitamento de componentes em diferentes rotas para otimização do código.
+- Entendimento sobre rotas aninhadas (nested routes) e sua utilidade para resolver problemas e melhorar a organização do código.
+- Descoberta sobre como o React Router utiliza funcionalidades nativas do navegador para alterar as rotas e compartilhar estados.
+- Refatoração do código utilizando o ESLint para garantir um código limpo, fácil de entender e escalável. 
 
 **[Acesse aqui o Alura-Aluroni pelo Vercel](https://alura-aluroni-pi.vercel.app/)**
 
@@ -54,13 +73,14 @@ npm start
 
 6. O servidor de desenvolvimento será iniciado e você poderá acessar a aplicação no seu navegador através do endereço `http://localhost:3000`.
 
-## Estrutura do projeto
+## Estruturas dos projetos
 
-A estrutura do projeto é a seguinte:
-``` Aluroni/
-├── public/
-│   ├── assets/
-│   │   └── menu_food/
+### Curso React: Lidando com Arquivos Estáticos:
+
+```alura-aluroni/  # Diretório principal do projeto
+├── public/  # Diretório contendo os arquivos públicos da aplicação
+│   ├── assets/  
+│   │   └── menu_food/ # Diretório para imagens relacionadas ao menu de comida
 │   │       ├── chilli_pasta.png
 │   │       ├── diced_picanha.png
 │   │       ├── house_pasta.png
@@ -70,67 +90,139 @@ A estrutura do projeto é a seguinte:
 │   │       ├── special_salad.png
 │   │       ├── steak_with_potatoes.png
 │   │       └── vegan_lasagna.png
-│   └── index.html
-├── src/
-│   ├── assets/
+│   └── index.html  # Ponto de entrada da aplicação
+├── src/  # Diretório principal da aplicação
+│   ├── assets/  # Diretório para arquivos estáticos utilizados na aplicação
 │   │   ├── menu/
 │   │   │   └── header.png
 │   │   └── logo.svg
-│   ├── pages/
+│   ├── pages/  # Diretório para as páginas da aplicação
 │   │   └── Menu/
-│   │       ├── Filters/
+│   │       ├── Filters/  # Diretório para os componentes de filtros
 │   │       │   ├── filters.json
 │   │       │   ├── Filters.module.css
 │   │       │   └── index.tsx
-│   │       ├── Items/
+│   │       ├── Items/  # Diretório para os componentes dos itens do menu
 │   │       │   ├── Item/
 │   │       │   │   ├── Item.module.css
 │   │       │   │   └── index.tsx
 │   │       │   ├── items.json
 │   │       │   ├── Items.module.css
 │   │       │   └── index.tsx
-│   │       ├── Orderer/
-|   │       │   ├── options.json
+│   │       ├── Orderer/  # Diretório para o componente de ordenação
+│   │       │   ├── options.json
 │   │       │   ├── Orderer.module.css
 │   │       │   └── index.tsx
-│   │       ├── Search/
+│   │       ├── Search/  # Diretório para o componente de busca
 │   │       │   ├── Search.module.css
 │   │       │   └── index.tsx
-│   │       ├── Menu.module.css
+│   │       ├── Menu.module.css  # Estilos específicos para a página do menu
 │   │       └── index.tsx
-│   ├── styles/
-│   │   ├── breakpoints.css
-│   │   └── variables.css
-│   ├── index.css
-│   ├── index.tsx
-│   └── react-app-env.d.ts
-├── .gitignore
-├── package-lock.json
-├── package.json
-└── tsconfig.json
+│   ├── styles/  # Diretório para os estilos globais da aplicação
+│   │   ├── breakpoints.css  # Ponto de quebra responsivo
+│   │   └── variables.css  # Variáveis de estilo
+│   ├── index.css  # Estilos globais adicionais
+│   ├── index.tsx  # Arquivo de entrada da aplicação React
+│   └── react-app-env.d.ts  # Configuração do ambiente do React
+├── .gitignore  # Lista de arquivos/diretórios ignorados pelo Git
+├── package-lock.json  # Gerenciamento de dependências da aplicação
+├── package.json  # Gerenciamento de dependências da aplicação
+└── tsconfig.json  # Configuração do TypeScript
 ```
+### Curso React: Conhecendo a Biblioteca React Router:
 
-- O diretório `public/` contém os arquivos públicos da aplicação, incluindo a pasta `assets/` para imagens relacionadas ao menu de comida e o arquivo `index.html` como o ponto de entrada da aplicação.
 
-- O diretório `src/` é o diretório principal da aplicação.
-
-  - O diretório `src/assets/` contém os arquivos estáticos utilizados na aplicação, como a pasta `menu/` para a imagem do cabeçalho e o arquivo `logo.svg`.
-
-  - O diretório `src/pages/` contém as páginas da aplicação. A pasta `Menu/` possui os componentes relacionados ao menu de comida, como os diretórios `Filters/` para os filtros, `Items/` para os itens do menu, `Orderer/` para o componente de ordenação e `Search/` para a busca. O arquivo `Menu.module.css` contém os estilos específicos para a página do menu.
-
-  - O diretório `src/styles/` contém os arquivos de estilos globais da aplicação, como `breakpoints.css` para os pontos de quebra responsivos e `variables.css` para as variáveis de estilo.
-
-  - O arquivo `src/index.css` contém estilos globais adicionais.
-
-  - O arquivo `src/index.tsx` é o arquivo de entrada da aplicação React.
-
-  - O arquivo `src/react-app-env.d.ts` é um arquivo de configuração do ambiente do React.
-
-- O arquivo `.gitignore` lista os arquivos e diretórios que serão ignorados pelo Git.
-
-- Os arquivos `package-lock.json` e `package.json` são utilizados para gerenciar as dependências da aplicação.
-
-- O arquivo `tsconfig.json` é o arquivo de configuração do TypeScript.
+``` alura-aluroni/  # Diretório principal do projeto
+├── public/  # Diretório contendo os arquivos públicos da aplicação
+│   ├── assets/
+│   │   └── menu_food/  # Diretório para imagens relacionadas ao menu de comida
+│   │       ├── chilli_pasta.png
+│   │       ├── diced_picanha.png
+│   │       ├── house_pasta.png
+│   │       ├── house_salad.png
+│   │       ├── meatballs.png
+│   │       ├── mediterranean_pasta.png
+│   │       ├── special_salad.png
+│   │       ├── steak_with_potatoes.png
+│   │       └── vegan_lasagna.png
+│   └── index.html  # Ponto de entrada da aplicação
+├── src/  # Diretório principal da aplicação
+│   ├── assets/  # Diretório para arquivos estáticos utilizados na aplicação
+|   |   ├── about/  # Diretório para imagens da página Sobre
+│   │   │   ├── home.png
+│   │   │   ├── pasta1.png
+│   │   │   └── pasta2.png
+│   │   ├── menu/
+│   │   │   └── header.png
+|   |   ├── not_found.svg  # Imagem para página de erro 404
+|   |   ├── our-home.png  # Imagem para a página inicial
+│   │   └── logo.svg  # Logotipo do projeto
+|   ├── components/  # Diretório para componentes reutilizáveis
+|   |   ├── DishTags/
+|   |   │   ├── DishTags.module.scss
+|   |   │   └── index.tsx
+|   |   ├── Footer/
+|   |   │   ├── Footer.module.scss
+|   |   │   └── index.tsx
+|   |   ├── Header/
+|   |   │   ├── Header.module.scss
+|   |   │   └── index.tsx
+|   |   └── NavMenu/
+|   |       ├── NavMenu.module.scss
+|   |       └── index.tsx
+|   ├── data/  # Diretório para os dados em formato JSON
+|   |   └── menu.json
+│   ├── pages/  # Diretório para as páginas da aplicação
+│   │   ├── About/  # Página Sobre
+│   │   │   ├── About.module.scss
+│   │   │   └── index.tsx
+│   │   ├── BasePage/  # Componente base para todas as páginas
+│   │   │   └── index.tsx
+│   │   ├── Dish/  # Página de detalhes do prato
+│   │   │   ├── Dish.module.scss
+│   │   │   └── index.tsx
+│   │   ├── Home/  # Página inicial
+│   │   │   ├── Home.module.scss
+│   │   │   └── index.tsx
+|   │   ├── NotFound/  # Página para erro 404
+│   │   │   ├── NotFound.module.scss
+│   │   │   └── index.tsx
+│   │   └── Menu/  # Página do Menu
+│   │       ├── Filters/  # Componente de Filtros
+│   │       │   ├── filters.json
+│   │       │   ├── Filters.module.scss
+│   │       │   └── index.tsx
+│   │       ├── Items/  # Componente de Itens do Menu
+│   │       │   ├── Item/
+│   │       │   │   ├── Item.module.scss
+│   │       │   │   └── index.tsx
+│   │       │   ├── Items.module.scss
+│   │       │   └── index.tsx
+│   │       ├── Orderer/  # Componente de Ordenação
+|   │       │   ├── options.json
+│   │       │   ├── Orderer.module.scss
+│   │       │   └── index.tsx
+│   │       ├── Search/  # Componente de Busca
+│   │       │   ├── Search.module.scss
+│   │       │   └── index.tsx
+│   │       ├── Menu.module.scss
+│   │       └── index.tsx
+│   ├── styles/  # Diretório para os estilos globais da aplicação
+|   |   ├── Theme.module.scss  # Tema da aplicação
+│   │   ├── breakpoints.scss  # Pontos de quebra para responsividade
+│   │   └── variables.scss  # Variáveis de estilo
+|   ├── types/  # Diretório para os tipos de TypeScript
+|   |   └── Dish.ts
+│   ├── index.css  # Estilos globais adicionais
+│   ├── index.tsx  # Arquivo de entrada da aplicação React
+|   ├── routes.tsx  # Rotas da aplicação
+│   └── react-app-env.d.ts  # Configuração do ambiente do React
+├── .eslintrc.json  # Configuração do ESLint
+├── .gitignore  # Lista de arquivos/diretórios ignorados pelo Git
+├── package-lock.json  # Gerenciamento de dependências da aplicação
+├── package.json  # Gerenciamento de dependências da aplicação
+└── tsconfig.json  # Configuração do TypeScript
+```
 
 ## Contribuição
 
