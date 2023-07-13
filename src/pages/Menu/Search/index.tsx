@@ -1,6 +1,6 @@
-import { Dispatch, SetStateAction } from "react";
-import styles from './Search.module.scss'
-import { CgSearch } from 'react-icons/cg'
+import { Dispatch, SetStateAction } from 'react';
+import styles from './Search.module.scss';
+import { CgSearch } from 'react-icons/cg';
 
 interface SearchProps {
     search: string;
@@ -19,5 +19,5 @@ export default function Search({search, setSearch} : SearchProps) {
                 color='#4C4D5F'
             />
         </div>
-    )
+    );
 }
