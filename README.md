@@ -29,6 +29,19 @@ Neste curso, foram explorados diversos aspectos relacionados à biblioteca React
 - Descoberta sobre como o React Router utiliza funcionalidades nativas do navegador para alterar as rotas e compartilhar estados.
 - Refatoração do código utilizando o ESLint para garantir um código limpo, fácil de entender e escalável. 
 
+---
+
+## React: Otimizando a Performance (continuação do projeto do segundo curso)
+
+Neste curso, foram abordados vários tópicos importantes relacionados à otimização de performance em aplicações React. Alguns dos tópicos abordados incluem:
+
+- Análise de componentes e páginas para identificar oportunidades de melhorar a performance.
+- Compreensão profunda de como o React renderiza componentes, incluindo conceitos como Virtual DOM e Reconciliation.
+- Uso de técnicas como memoização e imutabilidade, entender como elas se complementam e a sua importância em projetos React.
+- Diferenças entre 'memo' e 'useMemo' e orientações sobre quando usar cada um deles.
+- Uso prático da extensão React Devtools para analisar tempos de renderização de componentes e identificar por que os componentes estão atualizando.
+
+
 **[Acesse aqui o Alura-Aluroni pelo Vercel](https://alura-aluroni-pi.vercel.app/)**
 
 ## Como clonar o repositório
@@ -223,6 +236,8 @@ npm start
 ├── package.json  # Gerenciamento de dependências da aplicação
 └── tsconfig.json  # Configuração do TypeScript
 ```
+
+### Curso React: Otimizando a Performance: Não houve alterações na estrutura do projeto.
 
 ## Contribuição
 
