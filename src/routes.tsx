@@ -1,27 +1,32 @@
-import Home from 'pages/Home';
-import Menu from 'pages/Menu';
 import NavMenu from 'components/NavMenu';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import BasePage from 'pages/BasePage';
-import About from 'pages/About';
 import Footer from 'components/Footer';
-import NotFound from 'pages/NotFound';
-import Dish from 'pages/Dish';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { lazy, Suspense } from 'react';
+
+const Home = lazy(() => import('pages/Home'));
+const Menu = lazy(() => import('pages/Menu'));
+const About = lazy(() => import('pages/About'));
+const BasePage = lazy(() => import('pages/BasePage'));
+const NotFound = lazy(() => import('pages/NotFound'));
+const Dish = lazy(() => import('pages/Dish'));
+
 
 export default function AppRouter() {
     return (
         <Router>
             <main className="container">
                 <NavMenu />
-                <Routes>
-                    <Route path="/" element={<BasePage />}>
-                        <Route index element={<Home />} />
-                        <Route path="menu" element={<Menu />} />
-                        <Route path="about" element={<About />} />
-                        <Route path="dish/:id" element={<Dish />} />
-                    </Route>
-                    <Route path="*" element={<NotFound />} />
-                </Routes>
+                <Suspense fallback={<div>Loading...</div>}>
+                    <Routes>
+                        <Route path="/" element={<BasePage />}>
+                            <Route index element={<Home />} />
+                            <Route path="menu" element={<Menu />} />
+                            <Route path="about" element={<About />} />
+                            <Route path="dish/:id" element={<Dish />} />
+                        </Route>
+                        <Route path="*" element={<NotFound />} />
+                    </Routes>
+                </Suspense>
                 <Footer />
             </main>
         </Router>
