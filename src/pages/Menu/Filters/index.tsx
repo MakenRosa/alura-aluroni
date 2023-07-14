@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction } from 'react';
+import { Dispatch, SetStateAction, memo } from 'react';
 import filters from './filters.json';
 import styles from './Filters.module.scss';
 import classNames from 'classnames';
@@ -10,7 +10,7 @@ interface FiltersProps {
     setFilter: Dispatch<SetStateAction<number | null>>
 }
 
-export default function Filters({ filter, setFilter }: FiltersProps) {
+function Filters({ filter, setFilter }: FiltersProps) {
 
     const selectFilter = (option: IOption) => {
         if (filter === option.id) {
@@ -33,3 +33,5 @@ export default function Filters({ filter, setFilter }: FiltersProps) {
         </div>
     );
 }
+
+export default memo(Filters);

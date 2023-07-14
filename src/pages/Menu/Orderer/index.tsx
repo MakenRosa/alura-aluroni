@@ -1,15 +1,15 @@
 import styles from './Orderer.module.scss';
 import options from './options.json';
-import React, { useState } from 'react';
+import React, { memo, useState } from 'react';
 import classNames from 'classnames';
-import { MdKeyboardArrowUp, MdKeyboardArrowDown } from 'react-icons/md';
+import { MdKeyboardArrowUp } from 'react-icons/md';
 
 interface OrdererProps { 
   orderer: string,
   setOrderer: React.Dispatch<React.SetStateAction<string>>
 }
 
-export default function Orderer({
+function Orderer({
     orderer,
     setOrderer
 }: OrdererProps) {
@@ -25,7 +25,8 @@ export default function Orderer({
             onBlur={() => setIsOpen(false)}
         >
             <span>{ordererName || 'Order By'}</span>
-            {isOpen ? <MdKeyboardArrowUp size={20} /> : <MdKeyboardArrowDown size={20} /> }
+            {/* {isOpen ? <MdKeyboardArrowUp size={20} /> : <MdKeyboardArrowDown size={20} /> } */}
+            <MdKeyboardArrowUp size={20} style={{transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)'}} />
             <div className={classNames({
                 [styles.orderer__options]: true,
                 [styles['orderer__options--active']]: isOpen
@@ -39,3 +40,5 @@ export default function Orderer({
         </button>
     );
 }
+
+export default memo(Orderer);
