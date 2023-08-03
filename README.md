@@ -42,7 +42,7 @@ Neste curso, foram abordados vários tópicos importantes relacionados à otimiz
 - Uso prático da extensão React Devtools para analisar tempos de renderização de componentes e identificar por que os componentes estão atualizando.
 
 
-**[Acesse aqui o Aluroni pelo Vercel](https://alura-aluroni-pi.vercel.app/)**
+**[Acesse aqui o Aluroni pelo Vercel](https://aluroni-aug.vercel.app/)**
 
 ## Como clonar o repositório
 
