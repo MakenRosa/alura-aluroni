@@ -42,7 +42,7 @@ Neste curso, foram abordados vários tópicos importantes relacionados à otimiz
 - Uso prático da extensão React Devtools para analisar tempos de renderização de componentes e identificar por que os componentes estão atualizando.
 
 
-**[Acesse aqui o Alura-Aluroni pelo Vercel](https://alura-aluroni-pi.vercel.app/)**
+**[Acesse aqui o Aluroni pelo Vercel](https://alura-aluroni-pi.vercel.app/)**
 
 ## Como clonar o repositório
 
@@ -57,7 +57,7 @@ Siga as etapas abaixo para clonar este repositório e executar o projeto em sua 
 4. Execute o seguinte comando para clonar o repositório:
 
 ``` bash
-git clone https://github.com/makenrosa/alura-aluroni.git
+git clone https://github.com/makenrosa/aluroni.git
 ```
 
 5. Após o término do processo de clonagem, você terá uma cópia local do repositório em seu computador.
@@ -90,7 +90,7 @@ npm start
 
 ### Curso React: Lidando com Arquivos Estáticos:
 
-```alura-aluroni/  # Diretório principal do projeto
+```aluroni/  # Diretório principal do projeto
 ├── public/  # Diretório contendo os arquivos públicos da aplicação
 │   ├── assets/  
 │   │   └── menu_food/ # Diretório para imagens relacionadas ao menu de comida
@@ -145,7 +145,7 @@ npm start
 ### Curso React: Conhecendo a Biblioteca React Router:
 
 
-``` alura-aluroni/  # Diretório principal do projeto
+``` aluroni/  # Diretório principal do projeto
 ├── public/  # Diretório contendo os arquivos públicos da aplicação
 │   ├── assets/
 │   │   └── menu_food/  # Diretório para imagens relacionadas ao menu de comida
@@ -243,6 +243,6 @@ npm start
 
 Este é um projeto desenvolvido como parte de um curso da Alura e, portanto, não é aberto para contribuições externas no momento. No entanto, sinta-se à vontade para fazer um fork deste repositório e personalizá-lo conforme suas necessidades.
 
-Se você encontrar algum problema ou tiver sugestões, sinta-se à vontade para abrir uma [issue](https://github.com/makenrosa/alura-aluroni/issues) neste repositório.
+Se você encontrar algum problema ou tiver sugestões, sinta-se à vontade para abrir uma [issue](https://github.com/makenrosa/aluroni/issues) neste repositório.
 
 Aproveite o projeto! Se tiver alguma dúvida, não hesite em entrar em contato.
